@@ -1,0 +1,293 @@
+* {
+    text-decoration: none;
+
+    margin: 0px;
+
+}
+
+body {
+    background-color: rgba(236, 230, 230, 0.856);
+}
+
+.navdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10x;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: rgba(93, 226, 250, 0.562);
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    color: rgb(158, 153, 153);
+    margin: 10px;
+    padding: 7px;
+
+
+}
+
+.logo {
+    padding: 10px;
+    color: rgb(14, 1, 1);
+}
+
+#button {
+    border-radius: 20px;
+    background-color: rgba(245, 242, 242, 0.514);
+}
+
+a {
+    color: rgb(24, 1, 1);
+}
+
+a:hover,
+button:hover {
+
+    border-radius: 10px;
+    color: rgb(0, 238, 255);
+    font-size: large;
+    cursor: pointer; 
+
+
+}
+
+.wellcome {
+    color: rgb(2, 8, 12);
+    background-color: rgba(250, 250, 250, 0.61);
+    padding: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 100px;
+    box-shadow: 5px 10px 5px rgb(90, 88, 88);
+    border-radius: 30px;
+}
+
+img {
+    width:300px;
+    padding:0px;
+    margin: 0px;
+    padding-top:10px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    background-color:lightgrey;
+    align-items: center;
+    justify-content: flex-start;
+    max-width:400px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: fit-content;
+    
+
+}
+
+.main {
+    display:grid;
+    border: 2px;
+    border-radius: 10px black;
+    
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 5fr);
+    gap: 10px;
+    margin: 50px;
+    padding-left:100px ;
+}
+
+.sub:hover,
+.logo:hover {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 10px;
+    color: rgb(5, 5, 5);
+   
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: dimgray ;
+    cursor:progress;
+   
+    
+
+}
+
+.wellcome:hover {
+color:aqua;
+
+   
+   
+    
+}
+#download{
+    background-color: rgba(27, 26, 26, 0.356);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+#nts{
+    color: black;
+    margin: 2px;
+    padding:10px;
+
+   
+
+}
+#download:hover{
+    background-color: transparent;
+    cursor: progress;
+    font-size:large;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(6, 16, 19);
+    }
+}
+
+
+
+
+
+
+
+ .footer {
+     background: #000;
+     padding: 30px 0px;
+     font-family: 'Play', sans-serif;
+     text-align: center;
+ }
+
+ .footer .row {
+     width: 100%;
+     margin: 1% 0%;
+     padding: 0.6% 0%;
+     color: gray;
+     font-size: 0.8em;
+ }
+
+ .footer .row a {
+     text-decoration: none;
+     color: gray;
+     transition: 0.5s;
+ }
+
+ .footer .row a:hover {
+     color: #fff;
+ }
+
+ .footer .row ul {
+     width: 100%;
+ }
+
+ .footer .row ul li {
+     display: inline-block;
+     margin: 0px 30px;
+ }
+
+ .footer .row a i {
+     font-size: 2em;
+     margin: 0% 1%;
+ }
+
+ @media (max-width:720px) {
+     .footer {
+         text-align: left;
+         padding: 5%;
+     }
+
+     .footer .row ul li {
+         display: block;
+         margin: 10px 0px;
+         text-align: left;
+     }
+
+     .footer .row a i {
+         margin: 0% 3%;
+     }
+ }
+ i{
+    color: #000;
+    background-color: #000;
+ }
+
+
+
+ @media only screen and (max-width: 600px) {
+    body {
+        background-color: rgba(236, 230, 230, 1); /* Updated for better visibility */
+        font-size: 14px; /* Slightly larger text for readability */
+    }
+
+    .navdiv {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+        align-items: center; /* Center items */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Space between logo and nav items */
+    }
+
+    ul {
+        padding: 0; /* Remove padding from the list */
+    }
+
+    li {
+        display: block; /* Stack the navigation items vertically */
+        margin: 5px 0; /* Space between items */
+    }
+
+    #button {
+        width: 100%; /* Full width for the login button */
+        margin-top: 10px; /* Space above the button */
+    }
+
+    .wellcome {
+        margin-left: 5%; /* Reduce margin for mobile view */
+        margin-right: 5%; /* Reduce margin for mobile view */
+        padding: 15px; /* Reduce padding for mobile view */
+        box-shadow: none; /* Remove shadow for simplicity */
+        border-radius: 15px; /* Adjust border radius */
+    }
+
+    .main {
+        display: block; /* Stack items vertically for mobile */
+        margin: 20px; /* Adjust margin for mobile */
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    .sub {
+        max-width: 100%; /* Allow full width on mobile */
+        margin: 10px 0; /* Space between cards */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #download {
+        width: 100%; /* Full width for download button */
+        padding: 10px; /* Increase padding for better touch targets */
+    }
+
+    #nts {
+        font-size: 12px; /* Slightly smaller text for notes */
+    }
+
+    .footer .row {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center footer items */
+    }
+
+    .footer .row ul li {
+        margin: 5px 0; /* Space between footer links */
+    }
+}
