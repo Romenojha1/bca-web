@@ -17,13 +17,22 @@
 </head>
 
 <body>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        </script>
+        
     <nav class="navbar">
         <div class="navdiv">
             <div class="logo">
                 <h1>*BCA*</h1>
             </div>
-            <ul>
-
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li><a href="notes.html">notes</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="#">contact us</a></li>
