@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 9px;
+    width: 100%;
 }
 
 .logo {
@@ -31,16 +32,49 @@ li {
     margin: 10px;
 }
 
+/* Updated Button Styles */
 #button {
+    background-color: #007bff; /* Bright blue background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#button a {
+    color: white;
+    text-decoration: none;
+}
+
+#button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+}
+
+/* Updated Hamburger Styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    margin-left: auto; /* Aligns the hamburger to the right */
+}
+
+/* Updated Nav Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* General link and hover styles */
 a {
     color: black;
 }
 
-a:hover,
-button:hover {
+a:hover, button:hover {
     background-color: rgba(233, 223, 223, 0.712);
     border-radius: 10px;
     color: red;
@@ -48,6 +82,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* Welcome Section */
 .wellcome {
     background-image: url(https://www.shutterstock.com/image-vector/one-line-drawing-groups-happy-600nw-2234158261.jpg);
     background-repeat: no-repeat;
@@ -61,6 +96,7 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* About Section */
 #about {
     background-color: rgba(105, 98, 98, 0.336);
     display: inline-block;
@@ -80,11 +116,13 @@ button:hover {
     border-radius: 20px;
 }
 
+/* Image styling */
 img {
     width: 500px;
     padding-right: 20px;
 }
 
+/* Logo hover effect */
 .logo:hover {
     background-color: rgba(255, 255, 255, 0.274);
     border-radius: 10px;
@@ -92,6 +130,7 @@ img {
     font-size: xx-large;
 }
 
+/* Table styling */
 table {
     width: 100%;
     margin: 20px black;
@@ -99,8 +138,7 @@ table {
     text-align: left;
 }
 
-th,
-td {
+th, td {
     padding: 12px;
     border: 1px solid #050404;
 }
@@ -119,6 +157,7 @@ h2 {
     text-align: center;
 }
 
+/* Map Section */
 .map {
     display: flex;
     align-items: flex-start;
@@ -219,102 +258,117 @@ h2 {
         margin-top: 10px; /* Space above button */
     }
 
-
-    img {
-       
-        width: 100%;
-        position: fixed; /* Make image responsive */
-        height: auto; /* Maintain aspect ratio */
-        width: 100vh;
-        max-width: 500px; /* Set a maximum width to prevent oversized images */
-        margin: 20px 0; /* Add vertical margin to create space around the image */
+    .hamburger {
+        display: block;
     }
 
-    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+        width: 150px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a, #button a {
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        position: fixed;
+        height: auto;
+        max-width: 500px;
+        margin: 20px 0;
+    }
 
     #wel {
-       
-        font-size: 1px; /* Adjust font size */
-        padding:0px;
-        margin: 0px; /* Adjust padding */
+        font-size: 1px;
+        padding: 0px;
+        margin: 0px;
     }
 
     #about {
-        margin-left: 0; /* Remove margin on mobile */
-        text-align: center; /* Center text */
-        padding: 10px; /* Add padding */
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
     }
 
     .about {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align */
-        margin: 10px 0; /* Vertical spacing */
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
     }
 
-    
     table {
-        font-size: 14px; /* Smaller font size for tables */
+        font-size: 14px;
     }
 
-    th,
-    td {
-        padding: 8px; /* Less padding for cells */
+    th, td {
+        padding: 8px;
     }
 
     h2 {
-        font-size: 1.5em; /* Adjust heading size */
-        margin: 10px; /* Less margin */
-    }
-    .un{
-        display:flex;
-        flex-direction: column;
-       
+        font-size: 1.5em;
+        margin: 10px;
     }
 
-    .wellcome
-    {display: flex;
-       color: rgb(0, 0, 0);
-     
-       align-content: end ;
-       justify-content: end;
+    .un {
+        display: flex;
+        flex-direction: column;
     }
+
+    .wellcome {
+        display: flex;
+        color: rgb(0, 0, 0);
+        align-content: end;
+        justify-content: end;
+    }
+
     .map {
-        
-       
         flex-wrap: wrap;
-        overflow:auto; /* Ensure these are block-level elements */
-        clear: both; /* Prevent overlap with floated elements */
-        margin: 20px; /* Add margin for separation */
-        flex-shrink:10;
+        overflow: auto;
+        clear: both;
+        margin: 20px;
+        flex-shrink: 10;
     }
-    
 
     #pre {
-        padding: 10px; /* Maintain padding */
+        padding: 10px;
     }
 
-    /* Warning Message Styles */
     .warning-message {
-        clear: both; /* Ensure no overlap with other elements */
-        margin: 20px; /* Add margin for better spacing */
+        clear: both;
+        margin: 20px;
     }
 
-    /* Footer Styles */
     .footer {
-        padding: 15px; /* Reduce footer padding */
+        padding: 15px;
     }
 
     .footer .row {
-        font-size: 0.7em; /* Smaller font in footer */
+        font-size: 0.7em;
     }
 
     .footer .row ul li {
-        display: block; /* Stack footer links vertically */
-        margin: 5px 0; /* Vertical spacing */
+        display: block;
+        margin: 5px 0;
     }
 
     .footer .row a i {
-        font-size: 1.5em; /* Smaller icons */
+        font-size: 1.5em;
     }
 }
